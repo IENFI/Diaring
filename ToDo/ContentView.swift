@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Diaring
+//  ToDo
 //
-//  Created by 하민영 on 3/29/24.
+//  Created by 하민영 on 4/15/24.
 //
 
 import SwiftUI
@@ -18,4 +18,3 @@ struct ContentView: View {
 #Preview {
     ContentView(document: .constant(ToDoDocument()))
 }
-

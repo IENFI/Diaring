@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DiaringApp: App {
+    @StateObject var vm = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ListView()
+            }
+            .environmentObject(vm)
+            .environmentObject(vm)
         }
     }
 }

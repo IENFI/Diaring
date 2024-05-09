@@ -11,6 +11,20 @@
 		E64A16C52BB6C41F0043432B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A16C42BB6C41F0043432B /* ContentView.swift */; };
 		E64A16C72BB6C4200043432B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A16C62BB6C4200043432B /* Assets.xcassets */; };
 		E64A16CA2BB6C4200043432B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A16C92BB6C4200043432B /* Preview Assets.xcassets */; };
+		E6EF239E2BED248F00CCD9F9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF239D2BED248F00CCD9F9 /* ListViewModel.swift */; };
+		E6EF23A02BED24B200CCD9F9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF239F2BED24B200CCD9F9 /* ItemModel.swift */; };
+		E6EF23A22BED24D400CCD9F9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A12BED24D400CCD9F9 /* ListView.swift */; };
+		E6EF23A42BED24FB00CCD9F9 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A32BED24FB00CCD9F9 /* ListRowView.swift */; };
+		E6EF23A62BED251400CCD9F9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A52BED251400CCD9F9 /* AddView.swift */; };
+		E6EF23A82BED254D00CCD9F9 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A72BED254D00CCD9F9 /* NoItemsView.swift */; };
+		E6EF23AA2BED258500CCD9F9 /* ToDoDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A92BED258500CCD9F9 /* ToDoDocument.swift */; };
+		E6EF23AD2BED268400CCD9F9 /* HomeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */; };
+		E6EF23B02BED2D9B00CCD9F9 /* UnderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */; };
+		E6EF23B22BED2E4800CCD9F9 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */; };
+		E6EF23B42BED2E9D00CCD9F9 /* TabView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */; };
+		E6EF23B62BED31C600CCD9F9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B52BED31C600CCD9F9 /* TestView.swift */; };
+		E6EF23BA2BED36B900CCD9F9 /* AddPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */; };
+		E6EF23BC2BED3ADB00CCD9F9 /* EditPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +33,20 @@
 		E64A16C42BB6C41F0043432B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E64A16C62BB6C4200043432B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64A16C92BB6C4200043432B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6EF239D2BED248F00CCD9F9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E6EF239F2BED24B200CCD9F9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		E6EF23A12BED24D400CCD9F9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E6EF23A32BED24FB00CCD9F9 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		E6EF23A52BED251400CCD9F9 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		E6EF23A72BED254D00CCD9F9 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		E6EF23A92BED258500CCD9F9 /* ToDoDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDocument.swift; sourceTree = "<group>"; };
+		E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSetting.swift; sourceTree = "<group>"; };
+		E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderTabView.swift; sourceTree = "<group>"; };
+		E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView2.swift; sourceTree = "<group>"; };
+		E6EF23B52BED31C600CCD9F9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanView.swift; sourceTree = "<group>"; };
+		E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +79,14 @@
 		E64A16C12BB6C41F0043432B /* Diaring */ = {
 			isa = PBXGroup;
 			children = (
-				E64A16C22BB6C41F0043432B /* DiaringApp.swift */,
+				E6EF23AE2BED2D8D00CCD9F9 /* Views */,
+				E6EF23AB2BED264D00CCD9F9 /* Setting */,
 				E64A16C42BB6C41F0043432B /* ContentView.swift */,
+				E6EF23992BED242900CCD9F9 /* Todo */,
+				E6EF23B72BED330E00CCD9F9 /* Plan */,
 				E64A16C62BB6C4200043432B /* Assets.xcassets */,
 				E64A16C82BB6C4200043432B /* Preview Content */,
+				E6EF23B52BED31C600CCD9F9 /* TestView.swift */,
 			);
 			path = Diaring;
 			sourceTree = "<group>";
@@ -65,6 +97,80 @@
 				E64A16C92BB6C4200043432B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6EF23992BED242900CCD9F9 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF239A2BED242F00CCD9F9 /* Views */,
+				E6EF239B2BED243C00CCD9F9 /* ViewModels */,
+				E6EF239C2BED245600CCD9F9 /* Models */,
+				E64A16C22BB6C41F0043432B /* DiaringApp.swift */,
+				E6EF23A92BED258500CCD9F9 /* ToDoDocument.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		E6EF239A2BED242F00CCD9F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF23A12BED24D400CCD9F9 /* ListView.swift */,
+				E6EF23A32BED24FB00CCD9F9 /* ListRowView.swift */,
+				E6EF23A52BED251400CCD9F9 /* AddView.swift */,
+				E6EF23A72BED254D00CCD9F9 /* NoItemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6EF239B2BED243C00CCD9F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF239D2BED248F00CCD9F9 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E6EF239C2BED245600CCD9F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF239F2BED24B200CCD9F9 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6EF23AB2BED264D00CCD9F9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E6EF23AE2BED2D8D00CCD9F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */,
+				E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */,
+				E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6EF23B72BED330E00CCD9F9 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF23B82BED36B100CCD9F9 /* View */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		E6EF23B82BED36B100CCD9F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */,
+				E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +243,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EF23B62BED31C600CCD9F9 /* TestView.swift in Sources */,
+				E6EF23B02BED2D9B00CCD9F9 /* UnderTabView.swift in Sources */,
+				E6EF23A62BED251400CCD9F9 /* AddView.swift in Sources */,
+				E6EF23AD2BED268400CCD9F9 /* HomeSetting.swift in Sources */,
+				E6EF23B22BED2E4800CCD9F9 /* CustomTabView.swift in Sources */,
+				E6EF23BA2BED36B900CCD9F9 /* AddPlanView.swift in Sources */,
 				E64A16C52BB6C41F0043432B /* ContentView.swift in Sources */,
 				E64A16C32BB6C41F0043432B /* DiaringApp.swift in Sources */,
+				E6EF23AA2BED258500CCD9F9 /* ToDoDocument.swift in Sources */,
+				E6EF23BC2BED3ADB00CCD9F9 /* EditPlanView.swift in Sources */,
+				E6EF23B42BED2E9D00CCD9F9 /* TabView2.swift in Sources */,
+				E6EF23A22BED24D400CCD9F9 /* ListView.swift in Sources */,
+				E6EF23A02BED24B200CCD9F9 /* ItemModel.swift in Sources */,
+				E6EF239E2BED248F00CCD9F9 /* ListViewModel.swift in Sources */,
+				E6EF23A82BED254D00CCD9F9 /* NoItemsView.swift in Sources */,
+				E6EF23A42BED24FB00CCD9F9 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
