@@ -28,7 +28,7 @@ struct TabView2: View {
             CustomTabView(currentTab: $currentTab)
         }
         .listStyle(.plain)
-        .navigationTitle("일정")
+        .navigationTitle("할 일")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
                 EditButton()
