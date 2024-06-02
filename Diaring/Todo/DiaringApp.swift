@@ -14,7 +14,7 @@ struct DiaringApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                ListView()
+                TabView2()
             }
             .environmentObject(vm)
             .environmentObject(vm)

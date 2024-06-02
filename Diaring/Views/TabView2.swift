@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TabView2: View {
     @State var currentTab: Tab = .plan
+    @EnvironmentObject var vm: ListViewModel
     
     init() { // Tab View가 사라져도 터치가 되는 현상 수정. 이 뷰가 init될 때 Tab View가 보이지 않게끔 구성한다.
         UITabBar.appearance().isHidden = true
@@ -17,9 +18,13 @@ struct TabView2: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection : $currentTab){
-                ListView()
+                NavigationView {
+                    CalendarView()
+                }
                     .tag(Tab.plan)
-                ListView()
+                NavigationView {
+                            ListView()
+                        }
                     .tag(Tab.todo)
                 Text("설정")
                     .tag(Tab.setting)
@@ -28,19 +33,18 @@ struct TabView2: View {
             CustomTabView(currentTab: $currentTab)
         }
         .listStyle(.plain)
-        .navigationTitle("할 일")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading){
-                EditButton()
-            }
-            ToolbarItem(placement: .navigationBarTrailing){
-                NavigationLink {
-                    AddView()
-                } label : {
-                    Image(systemName: "plus")
-                }
-            }
-        }
+//        .toolbar {
+//            ToolbarItem(placement: .navigationBarLeading){
+//                EditButton()
+//            }
+//            ToolbarItem(placement: .navigationBarTrailing){
+//                NavigationLink {
+//                    AddView()
+//                } label : {
+//                    Image(systemName: "plus")
+//                }
+//            }
+//        }
     }
 }
 

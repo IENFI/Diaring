@@ -31,7 +31,7 @@ struct ListView: View {
             }
         }
         .listStyle(.plain)
-        .navigationTitle("메모메모📝")
+        .navigationTitle("To do")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
                 EditButton()

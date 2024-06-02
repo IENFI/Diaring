@@ -18,7 +18,7 @@ struct AddView: View {
     var body: some View {
         ScrollView {
             VStack {
-                TextField("메모를 추가할까요?", text: $textFieldText)
+                TextField("할 일 추가", text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
@@ -39,11 +39,11 @@ struct AddView: View {
             .font(.title2)
             .padding()
         }
-        .navigationTitle("메모 추가🖋️")
-        .alert("메모가 짧아요", isPresented: $showAlert) {
+        .navigationTitle("To do🖋️")
+        .alert("내용이 짧아요", isPresented: $showAlert) {
             
         } message: {
-            Text("메모를 조금 더 길게 써볼까요🥹")
+            Text("내용이 있어야해요🥹")
         }
     }
     
@@ -55,7 +55,7 @@ struct AddView: View {
     }
     
     func isAppropriate() -> Bool {
-        if textFieldText.count < 2 {
+        if textFieldText.count < 1 {
             showAlert.toggle()
             return false
         }
