@@ -32,15 +32,20 @@ struct ListView: View {
         }
         .listStyle(.plain)
         .navigationTitle("To do")
+//        .navigationBarTitle("To do", displayMode : .inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading){
                 EditButton()
+                    .font(.title)
+                    .foregroundColor(.black)
             }
             ToolbarItem(placement: .navigationBarTrailing){
                 NavigationLink {
                     AddView()
                 } label : {
                     Image(systemName: "plus")
+                        .font(.title)
+                        .foregroundColor(.black)
                 }
             }
         }

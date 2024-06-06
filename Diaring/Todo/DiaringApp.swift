@@ -14,10 +14,11 @@ struct DiaringApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TabView2()
+                UnderTab()
             }
             .environmentObject(vm)
             .environmentObject(vm)
         }
     }
 }
+
