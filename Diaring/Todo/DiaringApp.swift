@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct DiaringApp: App {
     @StateObject var vm = ListViewModel()
+    @StateObject var darkModeSettings = DarkModeSettingsViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -18,6 +19,8 @@ struct DiaringApp: App {
             }
             .environmentObject(vm)
             .environmentObject(vm)
+            .environmentObject(darkModeSettings)
+            .preferredColorScheme(darkModeSettings.isDarkModeOn ? .dark : .light)
         }
     }
 }

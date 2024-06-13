@@ -24,15 +24,21 @@ struct UnderTab: View {
                         //                        .padding()
                     }
                     .tag(Tab.plan)
+                    .padding(.bottom, 50)
                     NavigationView {
                         ListView()
                     }
                     .tag(Tab.todo)
-                    Text("설정")
-                        .tag(Tab.setting)
+                    .padding(.bottom, 50)
+                    NavigationView {
+                        SettingView()
+                    }
+                    .tag(Tab.setting)
+                    .padding(.bottom, 50)
                 }
                 
                 CustomTabView(currentTab: $currentTab)
+                
             }
             
         }

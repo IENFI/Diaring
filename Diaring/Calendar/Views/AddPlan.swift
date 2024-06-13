@@ -23,34 +23,30 @@ struct AddPlan: View {
     
     var body: some View {
         //        Text("Selected Date: \(planModel.isClickedDate, formatter: dateFormatter)")
-        NavigationView {
-            Form {
-                Section(header: Text("일정 제목")) {
-                    TextField("제목을 입력하세요", text: $title)
-                }
-                
-                Section(header: Text("날짜 선택")) {
-                    DatePicker("날짜를 선택하세요", selection: $date, displayedComponents: .date)
-                }
-                
-                Section(header: Text("일정 내용")) {
-                    TextEditor(text: $details)
-                        .frame(height: 200)
-                }
-                
+        Form {
+            Section(header: Text("일정 제목")) {
+                TextField("제목을 입력하세요", text: $title)
             }
-            .navigationBarTitle("새 일정 추가", displayMode: .inline)
-            .navigationBarItems(trailing: Button("저장") {
-                planModel.addPlan(title: title, date: date, details: details)
-                presentationMode.wrappedValue.dismiss()
-            })
-            .onAppear {
-                // View가 나타날 때 planModel.isClickedDate 값을 사용하여 date를 설정
-                self.date = planModel.isClickedDate
+            
+            Section(header: Text("날짜 선택")) {
+                DatePicker("날짜를 선택하세요", selection: $date, displayedComponents: .date)
             }
+            
+            Section(header: Text("일정 내용")) {
+                TextEditor(text: $details)
+                    .frame(height: 200)
+            }
+            
         }
-        
-        Spacer()
+        .navigationBarTitle("새 일정 추가", displayMode: .inline)
+        .navigationBarItems(trailing: Button("저장") {
+            planModel.addPlan(title: title, date: date, details: details)
+            presentationMode.wrappedValue.dismiss()
+        })
+        .onAppear {
+            // View가 나타날 때 planModel.isClickedDate 값을 사용하여 date를 설정
+            self.date = planModel.isClickedDate
+        }
     }
 }
 

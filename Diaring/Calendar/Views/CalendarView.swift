@@ -11,7 +11,7 @@ struct CalendarView: View {
     @State private var month: Date = Date()
     @StateObject var planModel = PlanViewModel()
     @State private var clickedCurrentMonthDates: Date?
-    
+    @StateObject var darkModeSettings = DarkModeSettingsViewModel()
     @State private var showingAddPlanView = false
     
     init(
@@ -36,7 +36,7 @@ struct CalendarView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle("Calendar")
         
-//        .navigationBarTitle("Calendar", displayMode: .inline)
+        //        .navigationBarTitle("Calendar", displayMode: .inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing){
                 NavigationLink {
@@ -45,7 +45,7 @@ struct CalendarView: View {
                 } label : {
                     Image(systemName: "plus")
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(darkModeSettings.isDarkModeOn ? .white : .black)
                 }
             }
         }
@@ -92,7 +92,7 @@ struct CalendarView: View {
                 label: {
                     Image(systemName: "chevron.left")
                         .font(.title)
-                        .foregroundColor(canMoveToPreviousMonth() ? .black : . gray)
+                        .foregroundColor(canMoveToPreviousMonth() ? darkModeSettings.isDarkModeOn ? Color.white : Color.black : . gray)
                 }
             )
             .disabled(!canMoveToPreviousMonth())
@@ -107,7 +107,7 @@ struct CalendarView: View {
                 label: {
                     Image(systemName: "chevron.right")
                         .font(.title)
-                        .foregroundColor(canMoveToNextMonth() ? .black : .gray)
+                        .foregroundColor(canMoveToNextMonth() ? darkModeSettings.isDarkModeOn ? Color.white : Color.black : .gray)
                 }
             )
             .disabled(!canMoveToNextMonth())
@@ -131,8 +131,9 @@ struct CalendarView: View {
                         let day = Calendar.current.component(.day, from: date)
                         let clicked = clickedCurrentMonthDates == date
                         let isToday = date.formattedCalendarDayDate == today.formattedCalendarDayDate
+                        let hasDate = planModel.hasPlans(for: date)
                         
-                        CellView(day: day, clicked: clicked, isToday: isToday)
+                        CellView(day: day, clicked: clicked, isToday: isToday, hasDate: hasDate)
                     } else if let prevMonthDate = Calendar.current.date(
                         byAdding: .day,
                         value: index + lastDayOfMonthBefore,
@@ -161,22 +162,25 @@ private struct CellView: View {
     private var clicked: Bool
     private var isToday: Bool
     private var isCurrentMonthDay: Bool
+    private var hasDate: Bool
+    @StateObject var darkModeSettings = DarkModeSettingsViewModel()
+    
     private var textColor: Color {
         if clicked {
-            return Color.white
+            return darkModeSettings.isDarkModeOn ? Color.black : Color.white
         } else if isCurrentMonthDay {
-            return Color.black
+            return darkModeSettings.isDarkModeOn ? Color.white : Color.black
         } else {
             return Color.gray
         }
     }
     private var backgroundColor: Color {
         if clicked {
-            return Color.black
+            return darkModeSettings.isDarkModeOn ? Color.white : Color.black
         } else if isToday {
             return Color.gray
         } else {
-            return Color.white
+            return darkModeSettings.isDarkModeOn ? Color.black : Color.white
         }
     }
     
@@ -184,12 +188,14 @@ private struct CellView: View {
         day: Int,
         clicked: Bool = false,
         isToday: Bool = false,
-        isCurrentMonthDay: Bool = true
+        isCurrentMonthDay: Bool = true,
+        hasDate: Bool = false
     ) {
         self.day = day
         self.clicked = clicked
         self.isToday = isToday
         self.isCurrentMonthDay = isCurrentMonthDay
+        self.hasDate = hasDate
     }
     
     fileprivate var body: some View {
@@ -201,16 +207,16 @@ private struct CellView: View {
             
             Spacer()
             
-            if clicked {
+            if hasDate {
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(.red)
+                    .fill(.yellow)
                     .frame(width: 10, height: 10)
             } else {
                 Spacer()
                     .frame(height: 10)
             }
         }
-        .frame(height: 50)
+        .frame(height: 45)
     }
 }
 

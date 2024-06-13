@@ -68,4 +68,8 @@ class PlanViewModel: ObservableObject {
             UserDefaults.standard.set(encodedData, forKey: plansKey)
         }
     }
+    
+    func hasPlans(for date: Date) -> Bool {
+        return !plans(for: date).isEmpty
+    }
 }

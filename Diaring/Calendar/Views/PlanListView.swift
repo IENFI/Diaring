@@ -20,6 +20,7 @@ struct PlanListView: View {
             }
             .onDelete(perform: planModel.deletePlan)
         }
+        .frame(maxHeight: .infinity)
         .navigationBarTitle("일정 목록")
     }
 }
