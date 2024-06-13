@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E61C853B2BF5F5A800479AD2 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C853A2BF5F5A800479AD2 /* PlanView.swift */; };
+		E61C853D2BF5F5B800479AD2 /* AddPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C853C2BF5F5B800479AD2 /* AddPlan.swift */; };
+		E61C853F2BF5F71400479AD2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C853E2BF5F71400479AD2 /* CalendarView.swift */; };
+		E61C85412BF6079900479AD2 /* CalendarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61C85402BF6079900479AD2 /* CalendarPicker.swift */; };
+		E6278E712C0E1B96000AFFD1 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6278E702C0E1B96000AFFD1 /* PlanListView.swift */; };
+		E6278E732C0E1DE9000AFFD1 /* PlanListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6278E722C0E1DE9000AFFD1 /* PlanListRowView.swift */; };
+		E6278E752C0E1F6B000AFFD1 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6278E742C0E1F6B000AFFD1 /* PlanDetailView.swift */; };
+		E6278E772C0F8404000AFFD1 /* UnderTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6278E762C0F8404000AFFD1 /* UnderTab.swift */; };
 		E64A16C32BB6C41F0043432B /* DiaringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A16C22BB6C41F0043432B /* DiaringApp.swift */; };
 		E64A16C52BB6C41F0043432B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64A16C42BB6C41F0043432B /* ContentView.swift */; };
 		E64A16C72BB6C4200043432B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A16C62BB6C4200043432B /* Assets.xcassets */; };
 		E64A16CA2BB6C4200043432B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64A16C92BB6C4200043432B /* Preview Assets.xcassets */; };
+		E697529F2C1B8C2200922597 /* DarkModelSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697529E2C1B8C2200922597 /* DarkModelSettingsViewModel.swift */; };
+		E69752A12C1B8C3C00922597 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69752A02C1B8C3C00922597 /* SettingView.swift */; };
+		E6BD3CB52C0D901500ED2EC4 /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BD3CB42C0D901500ED2EC4 /* PlanViewModel.swift */; };
+		E6BD3CB82C0D968600ED2EC4 /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BD3CB72C0D968600ED2EC4 /* PlanModel.swift */; };
 		E6EF239E2BED248F00CCD9F9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF239D2BED248F00CCD9F9 /* ListViewModel.swift */; };
 		E6EF23A02BED24B200CCD9F9 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF239F2BED24B200CCD9F9 /* ItemModel.swift */; };
 		E6EF23A22BED24D400CCD9F9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23A12BED24D400CCD9F9 /* ListView.swift */; };
@@ -21,18 +33,27 @@
 		E6EF23AD2BED268400CCD9F9 /* HomeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */; };
 		E6EF23B02BED2D9B00CCD9F9 /* UnderTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */; };
 		E6EF23B22BED2E4800CCD9F9 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */; };
-		E6EF23B42BED2E9D00CCD9F9 /* TabView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */; };
 		E6EF23B62BED31C600CCD9F9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B52BED31C600CCD9F9 /* TestView.swift */; };
-		E6EF23BA2BED36B900CCD9F9 /* AddPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */; };
-		E6EF23BC2BED3ADB00CCD9F9 /* EditPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E61C853A2BF5F5A800479AD2 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		E61C853C2BF5F5B800479AD2 /* AddPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlan.swift; sourceTree = "<group>"; };
+		E61C853E2BF5F71400479AD2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E61C85402BF6079900479AD2 /* CalendarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPicker.swift; sourceTree = "<group>"; };
+		E6278E702C0E1B96000AFFD1 /* PlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
+		E6278E722C0E1DE9000AFFD1 /* PlanListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListRowView.swift; sourceTree = "<group>"; };
+		E6278E742C0E1F6B000AFFD1 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		E6278E762C0F8404000AFFD1 /* UnderTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderTab.swift; sourceTree = "<group>"; };
 		E64A16BF2BB6C41F0043432B /* Diaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64A16C22BB6C41F0043432B /* DiaringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaringApp.swift; sourceTree = "<group>"; };
 		E64A16C42BB6C41F0043432B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E64A16C62BB6C4200043432B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64A16C92BB6C4200043432B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E697529E2C1B8C2200922597 /* DarkModelSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModelSettingsViewModel.swift; sourceTree = "<group>"; };
+		E69752A02C1B8C3C00922597 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E6BD3CB42C0D901500ED2EC4 /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
+		E6BD3CB72C0D968600ED2EC4 /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
 		E6EF239D2BED248F00CCD9F9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		E6EF239F2BED24B200CCD9F9 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		E6EF23A12BED24D400CCD9F9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -43,10 +64,7 @@
 		E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSetting.swift; sourceTree = "<group>"; };
 		E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderTabView.swift; sourceTree = "<group>"; };
 		E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
-		E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView2.swift; sourceTree = "<group>"; };
 		E6EF23B52BED31C600CCD9F9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanView.swift; sourceTree = "<group>"; };
-		E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E61C85362BF5F02C00479AD2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E6BD3CB62C0D967800ED2EC4 /* ViewModel */,
+				E6BD3CB32C0D900C00ED2EC4 /* Model */,
+				E61C85392BF5F58A00479AD2 /* Views */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		E61C85392BF5F58A00479AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E61C853A2BF5F5A800479AD2 /* PlanView.swift */,
+				E61C853C2BF5F5B800479AD2 /* AddPlan.swift */,
+				E6278E702C0E1B96000AFFD1 /* PlanListView.swift */,
+				E6278E742C0E1F6B000AFFD1 /* PlanDetailView.swift */,
+				E6278E722C0E1DE9000AFFD1 /* PlanListRowView.swift */,
+				E61C853E2BF5F71400479AD2 /* CalendarView.swift */,
+				E61C85402BF6079900479AD2 /* CalendarPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E64A16B62BB6C41F0043432B = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +121,11 @@
 		E64A16C12BB6C41F0043432B /* Diaring */ = {
 			isa = PBXGroup;
 			children = (
+				E61C85362BF5F02C00479AD2 /* Calendar */,
 				E6EF23AE2BED2D8D00CCD9F9 /* Views */,
 				E6EF23AB2BED264D00CCD9F9 /* Setting */,
 				E64A16C42BB6C41F0043432B /* ContentView.swift */,
 				E6EF23992BED242900CCD9F9 /* Todo */,
-				E6EF23B72BED330E00CCD9F9 /* Plan */,
 				E64A16C62BB6C4200043432B /* Assets.xcassets */,
 				E64A16C82BB6C4200043432B /* Preview Content */,
 				E6EF23B52BED31C600CCD9F9 /* TestView.swift */,
@@ -97,6 +139,30 @@
 				E64A16C92BB6C4200043432B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E697529D2C1B8C0A00922597 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E697529E2C1B8C2200922597 /* DarkModelSettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E6BD3CB32C0D900C00ED2EC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6BD3CB72C0D968600ED2EC4 /* PlanModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6BD3CB62C0D967800ED2EC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6BD3CB42C0D901500ED2EC4 /* PlanViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E6EF23992BED242900CCD9F9 /* Todo */ = {
@@ -141,7 +207,9 @@
 		E6EF23AB2BED264D00CCD9F9 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				E697529D2C1B8C0A00922597 /* ViewModel */,
 				E6EF23AC2BED268400CCD9F9 /* HomeSetting.swift */,
+				E69752A02C1B8C3C00922597 /* SettingView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -151,26 +219,9 @@
 			children = (
 				E6EF23AF2BED2D9B00CCD9F9 /* UnderTabView.swift */,
 				E6EF23B12BED2E4800CCD9F9 /* CustomTabView.swift */,
-				E6EF23B32BED2E9D00CCD9F9 /* TabView2.swift */,
+				E6278E762C0F8404000AFFD1 /* UnderTab.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E6EF23B72BED330E00CCD9F9 /* Plan */ = {
-			isa = PBXGroup;
-			children = (
-				E6EF23B82BED36B100CCD9F9 /* View */,
-			);
-			path = Plan;
-			sourceTree = "<group>";
-		};
-		E6EF23B82BED36B100CCD9F9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E6EF23B92BED36B900CCD9F9 /* AddPlanView.swift */,
-				E6EF23BB2BED3ADB00CCD9F9 /* EditPlanView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,20 +295,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6EF23B62BED31C600CCD9F9 /* TestView.swift in Sources */,
+				E6278E752C0E1F6B000AFFD1 /* PlanDetailView.swift in Sources */,
 				E6EF23B02BED2D9B00CCD9F9 /* UnderTabView.swift in Sources */,
 				E6EF23A62BED251400CCD9F9 /* AddView.swift in Sources */,
+				E61C853B2BF5F5A800479AD2 /* PlanView.swift in Sources */,
 				E6EF23AD2BED268400CCD9F9 /* HomeSetting.swift in Sources */,
+				E69752A12C1B8C3C00922597 /* SettingView.swift in Sources */,
+				E6278E772C0F8404000AFFD1 /* UnderTab.swift in Sources */,
 				E6EF23B22BED2E4800CCD9F9 /* CustomTabView.swift in Sources */,
-				E6EF23BA2BED36B900CCD9F9 /* AddPlanView.swift in Sources */,
+				E6BD3CB52C0D901500ED2EC4 /* PlanViewModel.swift in Sources */,
+				E61C85412BF6079900479AD2 /* CalendarPicker.swift in Sources */,
 				E64A16C52BB6C41F0043432B /* ContentView.swift in Sources */,
 				E64A16C32BB6C41F0043432B /* DiaringApp.swift in Sources */,
 				E6EF23AA2BED258500CCD9F9 /* ToDoDocument.swift in Sources */,
-				E6EF23BC2BED3ADB00CCD9F9 /* EditPlanView.swift in Sources */,
-				E6EF23B42BED2E9D00CCD9F9 /* TabView2.swift in Sources */,
+				E6278E712C0E1B96000AFFD1 /* PlanListView.swift in Sources */,
+				E61C853F2BF5F71400479AD2 /* CalendarView.swift in Sources */,
 				E6EF23A22BED24D400CCD9F9 /* ListView.swift in Sources */,
 				E6EF23A02BED24B200CCD9F9 /* ItemModel.swift in Sources */,
+				E6278E732C0E1DE9000AFFD1 /* PlanListRowView.swift in Sources */,
+				E61C853D2BF5F5B800479AD2 /* AddPlan.swift in Sources */,
 				E6EF239E2BED248F00CCD9F9 /* ListViewModel.swift in Sources */,
 				E6EF23A82BED254D00CCD9F9 /* NoItemsView.swift in Sources */,
+				E6BD3CB82C0D968600ED2EC4 /* PlanModel.swift in Sources */,
+				E697529F2C1B8C2200922597 /* DarkModelSettingsViewModel.swift in Sources */,
 				E6EF23A42BED24FB00CCD9F9 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Diaring/Preview Content\"";
@@ -418,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Diaring/Preview Content\"";

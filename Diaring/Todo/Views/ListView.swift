@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     @EnvironmentObject var vm: ListViewModel
+    @StateObject var darkModeSettings = DarkModeSettingsViewModel()
     
     var body: some View {
         
@@ -31,16 +32,21 @@ struct ListView: View {
             }
         }
         .listStyle(.plain)
-        .navigationTitle("메모메모📝")
+        .navigationTitle("할 일")
+//        .navigationBarTitle("To do", displayMode : .inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading){
+            ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
+                    .font(.title)
+                    .foregroundColor(darkModeSettings.isDarkModeOn ? .white : .black)
             }
             ToolbarItem(placement: .navigationBarTrailing){
                 NavigationLink {
                     AddView()
                 } label : {
                     Image(systemName: "plus")
+                        .font(.title)
+                        .foregroundColor(darkModeSettings.isDarkModeOn ? .white : .black)
                 }
             }
         }
